@@ -1,58 +1,58 @@
-# Ê¹ÓÃHeroku²¿ÊğXray¸ßĞÔÄÜ´úÀí·şÎñ£¬Í¨¹ıws´«ÊäµÄ (vmess¡¢vless¡¢trojan shadowsocks¡¢socks)µÈĞ­Òé
+# ä½¿ç”¨Herokuéƒ¨ç½²Xrayé«˜æ€§èƒ½ä»£ç†æœåŠ¡ï¼Œé€šè¿‡wsä¼ è¾“çš„ (vmessã€vlessã€trojan shadowsocksã€socks)ç­‰åè®®
 
-> ÌáĞÑ£º ÀÄÓÃ¿ÉÄÜµ¼ÖÂÕË»§±»BAN£¡£¡£¡ 
+> æé†’ï¼š æ»¥ç”¨å¯èƒ½å¯¼è‡´è´¦æˆ·è¢«BANï¼ï¼ï¼ 
 
-# 9ÔÂ21ÈÕĞŞ¸´
+# 9æœˆ21æ—¥ä¿®å¤
 
-## ¸ÅÊö
+## æ¦‚è¿°
 
-ÓÃÓÚÔÚ Heroku ÉÏ²¿Êğ vless+websocket+tls£¬Ã¿´Î²¿Êğ×Ô¶¯Ñ¡Ôñ×îĞÂµÄ alpine linux ºÍ Xray core ¡£  
-vless ĞÔÄÜ¸ü¼ÓÓÅĞã£¬Õ¼ÓÃ×ÊÔ´¸üÉÙ¡£
+ç”¨äºåœ¨ Heroku ä¸Šéƒ¨ç½² vless+websocket+tlsï¼Œæ¯æ¬¡éƒ¨ç½²è‡ªåŠ¨é€‰æ‹©æœ€æ–°çš„ alpine linux å’Œ Xray core ã€‚  
+vless æ€§èƒ½æ›´åŠ ä¼˜ç§€ï¼Œå ç”¨èµ„æºæ›´å°‘ã€‚
 
-* Ê¹ÓÃ[xray](https://github.com/XTLS/Xray-core)+caddyÍ¬Ê±²¿ÊğÍ¨¹ıws´«ÊäµÄvmess vless trojan shadowsocks socksµÈĞ­Òé£¬²¢Ä¬ÈÏÒÑÅäÖÃºÃÎ±×°ÍøÕ¾¡£
-* Ö§³ÖtorÍøÂç£¬ÇÒ¿ÉÍ¨¹ı×Ô¶¨ÒåÍøÂçÅäÖÃÎÄ¼şÆô¶¯xrayºÍcaddyÀ´°´ĞèÅäÖÃ¸÷ÖÖ¹¦ÄÜ  
-* Ö§³Ö´æ´¢×Ô¶¨ÒåÎÄ¼ş,Ä¿Â¼¼°ÕËºÅÃÜÂë¾ùÎªUUID,¿Í»§¶ËÎñ±ØÊ¹ÓÃTLSÁ¬½Ó  
-  **Heroku ÎªÎÒÃÇÌá¹©ÁËÃâ·ÑµÄÈİÆ÷·şÎñ£¬ÎÒÃÇ²»Ó¦¸ÃÀÄÓÃËü£¬ËùÒÔ±¾ÏîÄ¿²»ÒË×öÎª³¤ÆÚ·­Ç½Ê¹ÓÃ¡£**
+* ä½¿ç”¨[xray](https://github.com/XTLS/Xray-core)+caddyåŒæ—¶éƒ¨ç½²é€šè¿‡wsä¼ è¾“çš„vmess vless trojan shadowsocks socksç­‰åè®®ï¼Œå¹¶é»˜è®¤å·²é…ç½®å¥½ä¼ªè£…ç½‘ç«™ã€‚
+* æ”¯æŒtorç½‘ç»œï¼Œä¸”å¯é€šè¿‡è‡ªå®šä¹‰ç½‘ç»œé…ç½®æ–‡ä»¶å¯åŠ¨xrayå’Œcaddyæ¥æŒ‰éœ€é…ç½®å„ç§åŠŸèƒ½  
+* æ”¯æŒå­˜å‚¨è‡ªå®šä¹‰æ–‡ä»¶,ç›®å½•åŠè´¦å·å¯†ç å‡ä¸ºUUID,å®¢æˆ·ç«¯åŠ¡å¿…ä½¿ç”¨TLSè¿æ¥  
+  **Heroku ä¸ºæˆ‘ä»¬æä¾›äº†å…è´¹çš„å®¹å™¨æœåŠ¡ï¼Œæˆ‘ä»¬ä¸åº”è¯¥æ»¥ç”¨å®ƒï¼Œæ‰€ä»¥æœ¬é¡¹ç›®ä¸å®œåšä¸ºé•¿æœŸç¿»å¢™ä½¿ç”¨ã€‚**
 
-## ¾µÏñ
+## é•œåƒ
 
-±¾¾µÏñ²»»áÒòÎª´óÁ¿Õ¼ÓÃ×ÊÔ´¶ø±»·âºÅ¡£×¢²áºÃHerokuÕËºÅ²¢µÇÂ¼ºó,µã»÷ÏÂÃæ°´Å¥±ã¿É²¿Êğ.
+æœ¬é•œåƒä¸ä¼šå› ä¸ºå¤§é‡å ç”¨èµ„æºè€Œè¢«å°å·ã€‚æ³¨å†Œå¥½Herokuè´¦å·å¹¶ç™»å½•å,ç‚¹å‡»ä¸‹é¢æŒ‰é’®ä¾¿å¯éƒ¨ç½².
 
-### ·şÎñ¶Ë
+### æœåŠ¡ç«¯
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/githubXrayHeroku77/sunshine771dahi) 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/daywincs/XrayHeroku77) 
 
-µã»÷ÉÏÃæ×ÏÉ«`Deploy to Heroku`£¬»áÌø×ªµ½heroku app´´½¨Ò³Ãæ£¬ÌîÉÏÓ¦ÓÃµÄÃû³Æ¡¢Ñ¡Ôñ½Úµã(½¨ÒéÓÃÅ·ÖŞ½Úµã£¬ÃÀ¹ú½Úµã»á×Ô¶¯É¾³ıYouTubeÆÀÂÛÓëµãÔŞ£¡)¡¢°´ĞèĞŞ¸Ä²¿·Ö²ÎÊıºÍUUIDºóµã»÷ÏÂÃæ`deploy`¿ªÊ¼´´½¨²¿ÊğÓ¦ÓÃ  
-Èç³öÏÖ´íÎó£¬¿ÉÒÔ¶à³¢ÊÔ¼¸´Î£¬´ı²¿ÊğÍê³ÉºóÒ³Ãæµ×²¿»áÏÔÊ¾`Your app was successfully deployed` 
-  * µã»÷Manage App¿ÉÔÚSettingsÏÂµÄConfig VarsÏî**²é¿´ºÍÖØĞÂÉèÖÃ²ÎÊı**  
-  * µã»÷Open appÌø×ª[»¶Ó­Ò³Ãæ](/etc/CADDYIndexPage.md)ÓòÃû¼´Îªheroku·ÖÅäÓòÃû£¬¸ñÊ½Îª`xxx.herokuapp.com`£¬ÓÃÓÚ¿Í»§¶Ë  
-  * Ä¬ÈÏĞ­ÒéÃÜÂëÎª`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`£¬WSÂ·¾¶Îª$UUID-[vmess|vless|trojan|ss|socks]¸ñÊ½
+ç‚¹å‡»ä¸Šé¢ç´«è‰²`Deploy to Heroku`ï¼Œä¼šè·³è½¬åˆ°heroku appåˆ›å»ºé¡µé¢ï¼Œå¡«ä¸Šåº”ç”¨çš„åç§°ã€é€‰æ‹©èŠ‚ç‚¹(å»ºè®®ç”¨æ¬§æ´²èŠ‚ç‚¹ï¼Œç¾å›½èŠ‚ç‚¹ä¼šè‡ªåŠ¨åˆ é™¤YouTubeè¯„è®ºä¸ç‚¹èµï¼)ã€æŒ‰éœ€ä¿®æ”¹éƒ¨åˆ†å‚æ•°å’ŒUUIDåç‚¹å‡»ä¸‹é¢`deploy`å¼€å§‹åˆ›å»ºéƒ¨ç½²åº”ç”¨  
+å¦‚å‡ºç°é”™è¯¯ï¼Œå¯ä»¥å¤šå°è¯•å‡ æ¬¡ï¼Œå¾…éƒ¨ç½²å®Œæˆåé¡µé¢åº•éƒ¨ä¼šæ˜¾ç¤º`Your app was successfully deployed` 
+  * ç‚¹å‡»Manage Appå¯åœ¨Settingsä¸‹çš„Config Varsé¡¹**æŸ¥çœ‹å’Œé‡æ–°è®¾ç½®å‚æ•°**  
+  * ç‚¹å‡»Open appè·³è½¬[æ¬¢è¿é¡µé¢](/etc/CADDYIndexPage.md)åŸŸåå³ä¸ºherokuåˆ†é…åŸŸåï¼Œæ ¼å¼ä¸º`xxx.herokuapp.com`ï¼Œç”¨äºå®¢æˆ·ç«¯  
+  * é»˜è®¤åè®®å¯†ç ä¸º`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`ï¼ŒWSè·¯å¾„ä¸º$UUID-[vmess|vless|trojan|ss|socks]æ ¼å¼
 
-### ¿Í»§¶Ë
-* **Îñ±ØÌæ»»ËùÓĞµÄ`xxx.herokuapp.com`Îªheroku·ÖÅäµÄÏîÄ¿ÓòÃû**  
-* **Îñ±ØÌæ»»ËùÓĞµÄ`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`Îª²¿ÊğÊ±ÉèÖÃµÄUUID,½¨Òé¸ü¸Ä,²»ÒªÃ¿¸öÈË¶¼Ò»Ñù**  
+### å®¢æˆ·ç«¯
+* **åŠ¡å¿…æ›¿æ¢æ‰€æœ‰çš„`xxx.herokuapp.com`ä¸ºherokuåˆ†é…çš„é¡¹ç›®åŸŸå**  
+* **åŠ¡å¿…æ›¿æ¢æ‰€æœ‰çš„`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`ä¸ºéƒ¨ç½²æ—¶è®¾ç½®çš„UUID,å»ºè®®æ›´æ”¹,ä¸è¦æ¯ä¸ªäººéƒ½ä¸€æ ·**  
 
-**XRay ½«ÔÚ²¿ÊğÊ±»á×Ô¶¯ÊµÅä°²×°`×îĞÂ°æ±¾`¡£**
+**XRay å°†åœ¨éƒ¨ç½²æ—¶ä¼šè‡ªåŠ¨å®é…å®‰è£…`æœ€æ–°ç‰ˆæœ¬`ã€‚**
 
-**³öÓÚ°²È«¿¼Á¿£¬³ı·ÇÊ¹ÓÃ CDN£¬·ñÔòÇë²»ÒªÊ¹ÓÃ×Ô¶¨ÒåÓòÃû£¬¶øÊ¹ÓÃ Heroku ·ÖÅäµÄ¶ş¼¶ÓòÃû£¬ÒÔÊµÏÖ XRay vless Websocket + TLS¡£**
+**å‡ºäºå®‰å…¨è€ƒé‡ï¼Œé™¤éä½¿ç”¨ CDNï¼Œå¦åˆ™è¯·ä¸è¦ä½¿ç”¨è‡ªå®šä¹‰åŸŸåï¼Œè€Œä½¿ç”¨ Heroku åˆ†é…çš„äºŒçº§åŸŸåï¼Œä»¥å®ç° XRay vless Websocket + TLSã€‚**
 
 <details>
-<summary>V2rayN(Xray¡¢V2ray)</summary>
+<summary>V2rayN(Xrayã€V2ray)</summary>
 
 ```bash
-* ¿Í»§¶ËÏÂÔØ£ºhttps://github.com/2dust/v2rayN/releases
-* ´úÀíĞ­Òé£ºvless »ò vmess
-* µØÖ·£ºxxx.herokuapp.com
-* ¶Ë¿Ú£º443
-* Ä¬ÈÏUUID£º24b4b1e1-7a89-45f6-858c-242cf53b5bdb
-* vmess¶îÍâid£º0
-* ¼ÓÃÜ£ºnone
-* ´«ÊäĞ­Òé£ºws
-* Î±×°ÀàĞÍ£ºnone
-* Î±×°ÓòÃû£ºxxx.workers.dev(CF Workers·´´úµØÖ·)
-* Â·¾¶£º/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vless // Ä¬ÈÏvlessÊ¹ÓÃ(/×Ô¶¨ÒåUUIDÂë-vless)£¬vmessÊ¹ÓÃ(/×Ô¶¨ÒåUUIDÂë-vmess)
-* µ×²ã´«Êä°²È«£ºtls
-* Ìø¹ıÖ¤ÊéÑéÖ¤£ºfalse
+* å®¢æˆ·ç«¯ä¸‹è½½ï¼šhttps://github.com/2dust/v2rayN/releases
+* ä»£ç†åè®®ï¼švless æˆ– vmess
+* åœ°å€ï¼šxxx.herokuapp.com
+* ç«¯å£ï¼š443
+* é»˜è®¤UUIDï¼š24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* vmessé¢å¤–idï¼š0
+* åŠ å¯†ï¼šnone
+* ä¼ è¾“åè®®ï¼šws
+* ä¼ªè£…ç±»å‹ï¼šnone
+* ä¼ªè£…åŸŸåï¼šxxx.workers.dev(CF Workersåä»£åœ°å€)
+* è·¯å¾„ï¼š/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vless // é»˜è®¤vlessä½¿ç”¨(/è‡ªå®šä¹‰UUIDç -vless)ï¼Œvmessä½¿ç”¨(/è‡ªå®šä¹‰UUIDç -vmess)
+* åº•å±‚ä¼ è¾“å®‰å…¨ï¼štls
+* è·³è¿‡è¯ä¹¦éªŒè¯ï¼šfalse
 ```
 </details>
 
@@ -60,7 +60,7 @@ vless ĞÔÄÜ¸ü¼ÓÓÅĞã£¬Õ¼ÓÃ×ÊÔ´¸üÉÙ¡£
 <summary>Trojan-Go</summary>
 
 ```bash
-* ¿Í»§¶ËÏÂÔØ: https://github.com/p4gefau1t/trojan-go/releases
+* å®¢æˆ·ç«¯ä¸‹è½½: https://github.com/p4gefau1t/trojan-go/releases
 {
     "run_type": "client",
     "local_addr": "127.0.0.1",
@@ -83,18 +83,18 @@ vless ĞÔÄÜ¸ü¼ÓÓÅĞã£¬Õ¼ÓÃ×ÊÔ´¸üÉÙ¡£
 <summary>Shadowsocks</summary>
 
 ```bash
-* ¿Í»§¶ËÏÂÔØ£ºhttps://github.com/shadowsocks/shadowsocks-windows/releases/
-* ·şÎñÆ÷µØÖ·: xxx.herokuapp.com
-* ¶Ë¿Ú: 443
-* ÃÜÂë£º24b4b1e1-7a89-45f6-858c-242cf53b5bdb
-* ¼ÓÃÜ£ºchacha20-ietf-poly1305
-* ²å¼ş³ÌĞò£ºxray-plugin_windows_amd64.exe  //Ğè½«²å¼şhttps://github.com/shadowsocks/xray-plugin/releasesÏÂÔØ½âÑ¹ºó·ÅÖÁshadowsocksÍ¬Ä¿Â¼
-* ²å¼şÑ¡Ïî: tls;host=xxx.herokuapp.com;path=/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-ss
+* å®¢æˆ·ç«¯ä¸‹è½½ï¼šhttps://github.com/shadowsocks/shadowsocks-windows/releases/
+* æœåŠ¡å™¨åœ°å€: xxx.herokuapp.com
+* ç«¯å£: 443
+* å¯†ç ï¼š24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* åŠ å¯†ï¼šchacha20-ietf-poly1305
+* æ’ä»¶ç¨‹åºï¼šxray-plugin_windows_amd64.exe  //éœ€å°†æ’ä»¶https://github.com/shadowsocks/xray-plugin/releasesä¸‹è½½è§£å‹åæ”¾è‡³shadowsocksåŒç›®å½•
+* æ’ä»¶é€‰é¡¹: tls;host=xxx.herokuapp.com;path=/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-ss
 ```
 </details>
 
 <details>
-<summary>¿ÉÒÔÊ¹ÓÃCloudflareµÄWorkersÀ´ÖĞ×ªÁ÷Á¿£¬£¨Ö§³ÖVLESS\VMESS\Trojan-GoµÄWSÄ£Ê½£©ÅäÖÃÎª£º</summary>
+<summary>å¯ä»¥ä½¿ç”¨Cloudflareçš„Workersæ¥ä¸­è½¬æµé‡ï¼Œï¼ˆæ”¯æŒVLESS\VMESS\Trojan-Goçš„WSæ¨¡å¼ï¼‰é…ç½®ä¸ºï¼š</summary>
 
 ```js
 const SingleDay = 'xxx.herokuapp.com'
@@ -120,19 +120,19 @@ addEventListener(
 ```
 </details>
 
-## OpenWrtÓÅÑ¡IP½Å±¾×Ô¶¯¸üĞÂ£º
+## OpenWrtä¼˜é€‰IPè„šæœ¬è‡ªåŠ¨æ›´æ–°ï¼š
 
-* [CloudflareST](https://github.com/Lbingyi/CloudflareST) `OpenWrtÍÆ¼ö-ËÙ¶È½Ï¿ì`
-* [cf-autoupdate](https://github.com/Lbingyi/cf-autoupdate) `OpenWrtÍÆ¼ö`
+* [CloudflareST](https://github.com/Lbingyi/CloudflareST) `OpenWrtæ¨è-é€Ÿåº¦è¾ƒå¿«`
+* [cf-autoupdate](https://github.com/Lbingyi/cf-autoupdate) `OpenWrtæ¨è`
 
-> [¸ü¶àÀ´×ÔÈÈĞÄÍøÓÑPRµÄÊ¹ÓÃ½Ì³Ì](/tutorial)
+> [æ›´å¤šæ¥è‡ªçƒ­å¿ƒç½‘å‹PRçš„ä½¿ç”¨æ•™ç¨‹](/tutorial)
 
-## ¹ØÓÚCFÉ¸Ñ¡IP
+## å…³äºCFç­›é€‰IP
 
-* Çë²Î¿¼ [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest) `ÍÆ¼ö`
-* Çë²Î¿¼ [better-cloudflare-ip](https://github.com/badafans/better-cloudflare-ip)
+* è¯·å‚è€ƒ [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest) `æ¨è`
+* è¯·å‚è€ƒ [better-cloudflare-ip](https://github.com/badafans/better-cloudflare-ip)
 
-### ÌØ±ğ¸ĞĞ» £º
+### ç‰¹åˆ«æ„Ÿè°¢ ï¼š
 
 * [mixool](https://github.com/mixool/)
 * [bclswl0827](https://github.com/bclswl0827/v2ray-heroku)
